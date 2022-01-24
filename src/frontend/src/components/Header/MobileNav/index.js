@@ -7,12 +7,13 @@ import { CloseOutlined,CloseCircleOutlined } from '@ant-design/icons';
 
 
 const Container = styled.div`
-    position:absolute;
+    position:fixed;
     right:${({state})=>state ? "-50%" : "0"};
-    height:100%;
+    height:100vh;
     width:50%;
     background-color: rgba(0,0,0,0.9);
     transition:all 0.25s;
+    display:${({state})=>state ? "none" : "block"};
 
 
 `

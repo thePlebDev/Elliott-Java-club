@@ -32,16 +32,48 @@ const Image = styled.img`
 const Text = styled.div`
     color:${({theme})=>theme.main};
     font-size:1.9rem;
-        display:none;
+    display:none;
     padding-left:5px;
+
+    @media only screen and (min-width: 620px) {
+        display:block
+       
+      }
 `
 
 const IconContainer = styled.div`
     color:${({theme})=>theme.main};
     font-size:2em;
     margin-right:20px;
+    @media only screen and (min-width: 620px) {
+        display:none
+       
+      }
+`
+const LinksContainer = styled.div`
+      display:flex;
+      align-items:center;
+      @media only screen and (max-width: 620px) {
+        display:none
+       
+      }
+ 
+`
+const LinksText = styled.div`
+    color:${({theme})=>theme.main};
+    font-size:1.2rem;
+    margin:0 10px;
+    cursor:pointer;
+    @media only screen and (min-width: 700px) {
+        font-size:1.5rem;
+        margin:0 20px;
+       
+      }
+    
+
 `
 
+const arrays = ["Home","Courses","About"]
 
 const Header = ()=>{
     const [clicked,setClicked] = useState(true)
@@ -52,11 +84,19 @@ const Header = ()=>{
         
             <SubContainer >
                 <Image src={Logo}/>
-                <Text> E-ELLIOTT</Text>
+                <Text> Elliott Java Club</Text>
             </SubContainer>
+
             <IconContainer onClick={()=>{setClicked(false)}}>
                 <AlignRightOutlined/>
             </IconContainer>
+            <LinksContainer>
+            {
+                        arrays.map((title,index)=>{
+                            return <LinksText key={index}>{title}</LinksText>
+                        })
+                    }
+            </LinksContainer>
         </Nav>
         </>
     )

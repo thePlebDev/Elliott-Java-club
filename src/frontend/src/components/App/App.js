@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from '../Header';
+import Home from "../Home";
 
 
 // const Main = styled.h1`
@@ -14,6 +15,7 @@ const App =()=>{
     return(
         <div>
             <Header/>
+            <Home/>
         </div>
     )
 }
