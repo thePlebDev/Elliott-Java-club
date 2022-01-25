@@ -6,11 +6,7 @@ import Header from '../Header';
 import Home from "../Home";
 import About from '../About'
 import Courses from '../Courses';
-
-
-// const Main = styled.h1`
-//     color: ${({theme})=>theme.main}
-// `
+import Login from '../Login';
 
 
 const App =()=>{
@@ -22,6 +18,7 @@ const App =()=>{
                 <Route path="/" exact element={<Home/>} />
                 <Route path="/about" exact element={<About/>} />  
                 <Route path="/courses" exact element={<Courses/>} /> 
+                <Route path="/login/suprise/adminCredentials" exact element={<Login/>} />
             </Routes>
         </>
     )
