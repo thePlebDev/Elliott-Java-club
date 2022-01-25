@@ -7,9 +7,7 @@ const Container = styled.div`
     width:80%;
     
     margin:100px auto;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 
-    0 2px 2px rgb(0 0 0 / 6%), 
-    0 0 2px rgb(0 0 0 / 7%);
+    border:${({theme})=>"2px solid" + theme.main};
     padding:5px;
     border-radius:4px;
     display: grid;

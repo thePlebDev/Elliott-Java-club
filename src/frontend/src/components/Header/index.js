@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import { AlignRightOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
 import Logo from '../../resources/backgroundPicture.png'
 import MobileNav from './MobileNav'
@@ -64,6 +65,7 @@ const LinksText = styled.div`
     font-size:1.2rem;
     margin:0 10px;
     cursor:pointer;
+    text-transform:uppercase;
     @media only screen and (min-width: 700px) {
         font-size:1.5rem;
         margin:0 20px;
@@ -73,7 +75,7 @@ const LinksText = styled.div`
 
 `
 
-const arrays = ["Home","Courses","About"]
+const arrays = ["home","courses","about"]
 
 const Header = ()=>{
     const [clicked,setClicked] = useState(true)
@@ -91,11 +93,18 @@ const Header = ()=>{
                 <AlignRightOutlined/>
             </IconContainer>
             <LinksContainer>
-            {
-                        arrays.map((title,index)=>{
-                            return <LinksText key={index}>{title}</LinksText>
-                        })
-                    }
+                <Link to="/">
+                    <LinksText>Home</LinksText>
+                </Link>
+                
+                <Link to="/courses">
+                    <LinksText>Courses</LinksText>
+                </Link>
+
+                <Link to="/about">
+                    <LinksText>About</LinksText>
+                </Link>
+
             </LinksContainer>
         </Nav>
         </>
