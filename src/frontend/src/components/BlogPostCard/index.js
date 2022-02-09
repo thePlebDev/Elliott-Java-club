@@ -36,19 +36,19 @@ const Image = styled.img`
 `
 const Title = styled.div`
       margin-top:10px;
-      
+      color:#00a862;
       font-size:1.2rem;
 `
 
 
 
 
-const BlogPostCard =()=>{
+const BlogPostCard =({title})=>{
     return(
         <Container>
             <Image src={DefaultImage}/>
             <Title>
-                Java for begginers - PART 1
+                {title}
             </Title>
             
         </Container>

@@ -52,21 +52,21 @@ const About =()=>{
     return(
         <Container>
                 <Header>
-                    About Elliott Java Club
+                    About Elliott Engineering Club
                 </Header>
                 <SubText>
-                <CaretRightOutlined style={{color:"#00a862"}}/> The Elliott Java Club strives to create an archive of the most 
-                    indepth and useful Java related articles on the internet
+                <CaretRightOutlined style={{color:"#00a862"}}/> The Elliott Engineering Club strives to create a community of software engineers
+                and create hand crafted tools like, parsers, compilers, databases and much more.
                 </SubText>
                 <SubText>
-                <CaretRightOutlined style={{color:"#00a862"}}/> We publish free weekly blog posts with a strong empasis on Web development. 
+                <CaretRightOutlined style={{color:"#00a862"}}/> We publish free weekly blog posts with a strong empasis on software engineering. 
                 </SubText>
                 <Header>
                     Upcoming News!
                 </Header>
                 <SubText>
                 <CaretRightOutlined style={{color:"#00a862"}}/> 
-                Our team has officaly started development on our courses section !
+                Our team has officaly started development on our join subscription based community
                    
                 </SubText>
 

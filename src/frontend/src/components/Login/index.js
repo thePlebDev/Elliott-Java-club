@@ -71,9 +71,7 @@ const Login = ()=>{
             </Text>
             <Form handleSubmit={handleSubmit}>
                     <TextInput value={state.username} id={"username"} error={errors.username} handleChange={handleChange} type={"text"}/>
-                
                     <TextInput value={state.password} id={"password"} error={errors.password} handleChange={handleChange} type={"password"}/>
-
                     <Button type="submit">Submit</Button>  
             </Form>
            

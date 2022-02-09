@@ -83,11 +83,13 @@ const Header = ()=>{
         <>
         <MobileNav clicked={clicked} setClicked={setClicked}/>
         <Nav>
-        
-            <SubContainer >
-                <Image src={Logo}/>
-                <Text> Elliott Java Club</Text>
-            </SubContainer>
+            <Link to="/">
+                <SubContainer >
+                
+                        <Image src={Logo}/>
+                        <Text> Elliott Engineering Club</Text>  
+                </SubContainer>
+            </Link>
 
             <IconContainer onClick={()=>{setClicked(false)}}>
                 <AlignRightOutlined/>
@@ -98,7 +100,7 @@ const Header = ()=>{
                 </Link>
                 
                 <Link to="/courses">
-                    <LinksText>Courses</LinksText>
+                    <LinksText>Join</LinksText>
                 </Link>
 
                 <Link to="/about">
